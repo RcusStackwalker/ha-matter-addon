@@ -1,0 +1,21 @@
+name: "Matter Server (Custom)"
+version: "1.1.1-fix-001"
+slug: matter_server_custom
+description: "Fork of matterjs-server with subscribeMinIntervalFloorSeconds=0 for faster dimmer brightness sync"
+url: https://github.com/RcusStackwalker/matterjs-server/tree/fix/subscription-floor-zero
+arch:
+  - aarch64
+  - amd64
+startup: system
+boot: auto
+init: false
+image: "ghcr.io/rcusstackwalker/matterjs-server:22114f1"
+ports:
+  5580/tcp: 5580
+map:
+  - data
+environment:
+  LOG_LEVEL: info
+  STORAGE_PATH: /data
+options: {}
+schema: {}
