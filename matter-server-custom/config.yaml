@@ -9,7 +9,7 @@ arch:
 startup: system
 boot: auto
 init: false
-image: "ghcr.io/rcusstackwalker/matterjs-server:{version}"
+image: "ghcr.io/rcusstackwalker/matterjs-server"
 ports:
   5580/tcp: 5580
 map:
