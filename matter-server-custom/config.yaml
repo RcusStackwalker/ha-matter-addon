@@ -13,6 +13,8 @@ image: "ghcr.io/rcusstackwalker/matterjs-server"
 ports:
   5580/tcp: 5580
 map:
-  - data
+  - config:rw
+environment:
+  STORAGE_PATH: /config
 options: {}
 schema: {}
